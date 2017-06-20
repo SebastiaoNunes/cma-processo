@@ -5,7 +5,7 @@ import br.com.cna.exercicio1.serializador.GsonSerializador;
 import br.com.cna.exercicio1.serializador.SerializadorService;
 import br.com.cna.exercicio1.model.Empregado;
 import java.io.IOException;
-import java.util.Arrays;
+import java.util.ArrayList;
 import java.util.List;
 import org.junit.*;
 import com.fasterxml.jackson.core.JsonProcessingException;
@@ -25,7 +25,15 @@ public class SerializadorServiceTest {
 	}
 	
 	List<Empregado> empregados() {
-		Empregado empregado = new Empregado();
-		return Arrays.asList(empregado);
+		List<Empregado> empregados = new ArrayList<Empregado>();
+		
+		for (int i=0; i < 5000; i++) { 
+			Empregado empregado = new Empregado();
+			empregado.setId(i);
+			empregado.setNome("Empregado" + 1);
+			empregados.add(empregado);
+		}
+		
+		return empregados;
 	}
 }
