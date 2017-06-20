@@ -8,8 +8,8 @@ public class GerenciadorMapTest {
 	@Test
 	public void deveAcessarTodosElementosDoMapa() throws InterruptedException {
 		GerenciadorMap gerenciador = new GerenciadorMap();
-		gerenciador.popularCom(800);
+		gerenciador.popularCom(1000);
 		
-		Thread.sleep(100000);
+		Thread.sleep(20000);
 	}
 }

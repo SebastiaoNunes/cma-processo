@@ -10,6 +10,6 @@ public class GerenciadorFilaTest {
 		GerenciadorFila gerenciador = new GerenciadorFila();
 		gerenciador.processarFilaCom(20);
 		
-		Thread.sleep(100000);
+		Thread.sleep(20000);
 	}
 }
